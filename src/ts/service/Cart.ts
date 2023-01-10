@@ -30,7 +30,7 @@ export default class Cart {
     }
 
     sumDiscount(discount: number) {
-        let total: number = this.sum;
+        const total: number = this.sum;
         return Math.round(total * (1 - (discount / 100)));
     }
 
